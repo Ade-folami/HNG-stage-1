@@ -25,6 +25,11 @@ body {
   text-decoration: none;
   font-size: 1.3rem;
   color: #ffffff;
+
+  @media (max-width: 375px) {
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
 }
 .nav__link:hover {
   transform: scale(1.1);
@@ -51,12 +56,20 @@ p {
   color: #fff;
   font-size: 1.4rem;
   padding: 1rem;
+
+  @media (max-width: 375px) {
+    font-size: 1.2rem;
+  }
 }
 .home__description--buttons {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
+
+  @media (max-width: 375px) {
+    padding: 0.5rem;
+  }
 }
 .button {
   text-decoration: none;
@@ -65,26 +78,50 @@ p {
   color: #fff;
   border-radius: 1rem;
   transition: all 0.3s;
+
+  @media (max-width: 375px) {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+  }
 }
 .button:hover {
   background-color: #fff;
   color: #000;
   transform: scale(1.2);
+
+  @media (max-width: 375px) {
+    transform: scale(1.1);
+  }
 }
 .section__goals {
   border-top: 1px solid #ddd;
   padding: 6rem 3rem;
+
+  @media (max-width: 375px) {
+    padding: 3rem 1.5rem;
+  }
 }
 .goals__heading {
   padding: 1rem;
   text-align: center;
   font-size: 2.5rem;
+
+  @media (max-width: 375px) {
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
 }
 .goals__container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
   margin: 2rem auto;
+
+  @media (max-width: 375px) {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 1rem auto;
+  }
 }
 .goals__card {
   display: flex;
@@ -93,4 +130,8 @@ p {
   align-items: center;
   background-color: rgb(55, 83, 83);
   padding: 3rem;
+
+  @media (max-width: 375px) {
+    padding: 1.5rem;
+  }
 }
